@@ -1,12 +1,12 @@
 {
-  "name": "optimizedhtml",
-  "version": "2.0.1",
-  "description": "OptimizedHTML - Start HTML Template",
+  "name": "lsp-demo",
+  "version": "1.0",
+  "description": "Landing Single Page - DEMO",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "WebDesign Master",
+  "author": "Vasiliy Aleksashin",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.12",
