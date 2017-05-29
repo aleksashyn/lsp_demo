@@ -1,6 +1,6 @@
 {
   "name": "lsp-demo",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Landing Single Page - DEMO",
   "main": "index.js",
   "scripts": {
