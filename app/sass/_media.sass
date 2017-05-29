@@ -9,8 +9,18 @@
   .carousel-services-item
     flex-direction: column
   .s
-    &-studio, &-review, &-partners
+    &-studio, &-partners
       padding: 10% 0
+    &-call
+      background-position: 0
+
+@media only screen and (max-width: 992px)
+  .s-call
+    &::before
+      width: 100%
+    .callback
+      padding: 12% 0
+
 
 @media only screen and (max-width: 768px)
   body.ishome .site-header .top-line
@@ -25,6 +35,10 @@
       font-size: 15px
       .fa
         font-size: 13px
+  .s-call
+    background-size: cover
+    .callback
+      padding: 12% 5%
 
 @media only screen and (max-width: 480px)
   body.ishome .site-header .top-line

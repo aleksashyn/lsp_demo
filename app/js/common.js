@@ -75,6 +75,24 @@ $(function() {
     $ths.html($ths.html().replace(/^(\S+)/, '<span>$1</span>'));
   });
 
+  $('select').selectize();
+
+  $('form.callback').submit(function() {
+    var ths = $(this);
+    $.ajax({
+      type: "POST",
+      url: "/",
+      data: ths.serialize()
+    }).done(function() {
+      $(ths).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
+      setTimeout(function() {
+        $(ths).find('.success').removeClass('active').fadeOut();
+        ths.trigger("reset");
+      }, 3000);
+    });
+    return false;
+  });
+
   function onResize() {
     $('.carousel-services-content').equalHeights();
   };
