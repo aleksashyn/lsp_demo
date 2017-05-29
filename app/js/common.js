@@ -93,6 +93,13 @@ $(function() {
     return false;
   });
 
+  $('.reviews').owlCarousel({
+    loop: true,
+    items: 1,
+    smartSpeed: 700,
+    autoHeight: true
+  });
+
   function onResize() {
     $('.carousel-services-content').equalHeights();
   };
