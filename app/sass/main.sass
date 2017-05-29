@@ -418,6 +418,13 @@ $colors: $blue, $red, $accent
       height: 100%
       position: absolute
       background-color: rgba($accent, .92)
+  &-partners.section-overlay
+    &::before
+      background-color: #fff
+      opacity: .8
+    .h2
+      span
+        color: $accent
 
 .section-overlay
   &::before
@@ -637,7 +644,39 @@ select
     right: -10px
     transform: rotate(0)
 
-
+.partners
+  .partner
+    height: 100%
+    // display: flex
+    margin: auto
+  .owl-stage
+    display: flex
+    .owl-item
+      margin-top: 30px
+      img
+        max-width: 100%
+        width: auto
+        margin: auto
+        display: inline-block
+        padding: 0 5px
+  .owl-nav
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: 2
+    > div
+      position: absolute
+      top: 70px
+      color: #999
+      font-size: 30px
+      transition: opacity .5s ease
+      padding: 0 10px
+      &:hover
+        opacity .6
+      &.owl-prev
+        left: -60px
+      &.owl-next
+        right: -60px
 
 
 @import "media"
