@@ -34,6 +34,7 @@ $(function() {
       carouselService();
     }, 100);
   });
+
   $('.carousel-services').owlCarousel({
     loop: true,
     nav: true,
