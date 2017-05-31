@@ -445,6 +445,7 @@ $colors: $blue, $red, $accent
     padding: 7% 0%
 
   &-studio
+    background-image: url(../img/studio-bg.jpg)
     p
       margin: 35px 0
       font-size: 18px
@@ -461,14 +462,20 @@ $colors: $blue, $red, $accent
       height: 100%
       position: absolute
       background-color: rgba($accent, .92)
-  &-partners.section-overlay
-    &::before
-      background-color: #fff
-      opacity: .8
-    .h2
-      margin-top: 15px
-      span
-        color: $accent
+
+  &-review
+    background-image: url(../img/feedback-bg.jpg)
+
+  &-partners
+    background-image: url(../img/partners-bg.jpg)
+    &.section-overlay
+      &::before
+        background-color: #fff
+        opacity: .8
+      .h2
+        margin-top: 15px
+        span
+          color: $accent
 
 .section-overlay
   &::before
